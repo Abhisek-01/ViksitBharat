@@ -88,8 +88,8 @@ function App() {
       <PublicDashboard complaints={complaints.filter(c => c.status === "Resolved")} />
       <About />
       <Features />
-      {/* <Story /> */}
       {/* <Contact /> */}
+      <Story />
       
       
       <Chatbot/>

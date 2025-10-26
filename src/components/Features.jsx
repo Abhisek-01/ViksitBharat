@@ -99,7 +99,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 };
 
 const Features = () => (
-  <section id="features" className="bg-black pb-52">
+  <section id="features" className="bg-[#0096c7] pb-52">
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <p className="font-circular-web text-lg text-blue-50">
@@ -114,7 +114,7 @@ to cleaner streets, brighter neighborhoods, and stronger communities.
 
       <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
         <BentoCard
-           src="videos/feature-1.mp4"
+           src="videos/feature-1.mp4" 
           title={
             <>
              Smart<b> Issue </b>Reporting
@@ -135,11 +135,11 @@ to cleaner streets, brighter neighborhoods, and stronger communities.
               </>
             }
             description="Track your complaint from Pending to Resolved through an intuitive dashboard. Get instant updates and watch how your actions drive real change in your neighborhood."
-            isComingSoon
+            
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0 bg-[#0c96b8]">
+        <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0 bg-[#E68C3A]">
           <BentoCard 
             // src="videos/feature-3.avif"
             title={
@@ -153,7 +153,7 @@ Authorities can manage and update issues through a powerful admin dashboard, whi
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0 bg-[#a53860]">
+        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0 bg-[#336021]">
           <BentoCard className="text-black"
             // src="videos/feature-4.mp4"
             title={
@@ -163,12 +163,12 @@ Authorities can manage and update issues through a powerful admin dashboard, whi
             }
               description="Always Connected, Always Updated.
 Our in-app chatbot lets you instantly check your complaint status — just ask, “What’s the status of my complaint?” Plus, receive real-time push or email alerts whenever there’s an update"
-            // isComingSoon
+           
            />
         </BentoTilt>
 
         <BentoTilt className="bento-tilt_2">
-          <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
+          <div className="flex size-full flex-col justify-between bg-[#D8D1BD] p-5">
             <h1 className="bento-title special-font max-w-64 text-black">
               Redefin<b>ing Civic </b>Engage<b>ment</b>with <b>Tech</b>nology
                 

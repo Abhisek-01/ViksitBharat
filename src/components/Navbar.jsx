@@ -151,7 +151,7 @@ import { Link } from "react-scroll";
 
 import Button from "./Button";
 
-const navItems = ["About","Report", "Dashboard", "Features", "Admin"];
+const navItems = ["Report", "Dashboard", "About", "Features", "Admin"];
 
 const NavBar = ({ onAdminClick }) => {
   // State for toggling audio and visual indicator
@@ -210,7 +210,7 @@ const NavBar = ({ onAdminClick }) => {
   return (
     <div
       ref={navContainerRef}
-      className="fixed inset-x-0 top-4 z-50 h-16 border-none transition-all duration-700 sm:inset-x-6"
+      className="fixed inset-x-0 top-4 z-50 h-16 border-none transition-all duration-700 sm:inset-x-6 bg-black rounded-lg"
     >
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="flex size-full items-center justify-between p-4">

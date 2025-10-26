@@ -24,7 +24,12 @@ const AuthModal = ({ isOpen, onClose, onSuccess }) => {
       onSuccess();
       onClose();
     } catch (err) {
-      setError(err.message.replace('Firebase: ', ''));
+      if (err.code === 'auth/email-already-in-use') {
+        setError("This email is already registered. Please switch to Sign In.");
+        setIsLogin(true);
+      } else {
+        setError(err.message.replace('Firebase: ', ''));
+      }
     } finally {
       setLoading(false);
     }
